@@ -1,0 +1,14 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="persistence">
+      <properties>
+          <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+          <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521/xepdb1"/>
+          <property name="jakarta.persistence.jdbc.user" value="dariush"/>
+          <property name="jakarta.persistence.jdbc.password" value="myjava123"/>
+          <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      </properties>
+    </persistence-unit>
+</persistence>
